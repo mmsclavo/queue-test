@@ -12,7 +12,7 @@ import static org.rabbitmq.constants.RabbitMQConstants.RK_PRODUCT_LOG;
 @Component
 public class StringConsumer {
 
-    @RabbitListener(queues = {RK_PRODUCT_LOG})
+//    @RabbitListener(queues = {RK_PRODUCT_LOG})
     public void consumer(String message) {
         log.info("Consumer received a message " + message);
     }
